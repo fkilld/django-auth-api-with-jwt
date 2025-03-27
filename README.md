@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Django REST Framework Authentication API with JWT
+=======
+
+>>>>>>> b1e699e5e63043d1ec42a97ad24222b0451595ae
 
 This project implements a complete authentication system using Django REST Framework and Simple JWT. It provides secure user registration, login, profile management, and password reset functionality through RESTful APIs.
 
