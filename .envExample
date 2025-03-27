@@ -1,0 +1,13 @@
+# Email username/address used for SMTP authentication - This should be your Gmail account email
+# This is used in settings.py as EMAIL_HOST_USER for establishing SMTP connection with Gmail's servers
+EMAIL_USER = 'contact@geekyshows.com'
+
+# Email password or app-specific password for SMTP authentication
+# For security reasons, use an app-specific password instead of your main Gmail password
+# This is used in settings.py as EMAIL_HOST_PASSWORD for secure SMTP authentication
+EMAIL_PASS = '123456'
+
+# Sender's email address that will appear in the 'From' field of sent emails
+# This email address will be visible to recipients of emails sent by your application
+# Used in utils.py's send_email method as the from_email parameter for EmailMessage
+EMAIL_FROM = 'contact@geekyshows.com'
