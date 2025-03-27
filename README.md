@@ -1,15 +1,28 @@
-## Django REST Framework Complete Authentication API with Simple JWT
-### Video Link:- https://youtu.be/lo7lBD9ynVc
+# Django REST Framework Authentication API with JWT
 
-## To Run this Project follow below:
+This project implements a complete authentication system using Django REST Framework and Simple JWT. It provides secure user registration, login, profile management, and password reset functionality through RESTful APIs.
 
-```bash
-mkvirtualenv authenv
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
-```
+## Features
 
-#### There is a File "DjangoAuthAPI.postman_collection" which has Postman Collection You can import this file in your postman to test this API
+- User Registration with email verification
+- JWT Authentication
+- User Login/Logout
+- Password Change (for logged in users) 
+- Password Reset via Email
+- User Profile Management
+        
+## API Endpoints
 
+### Authentication Endpoints
+- `POST /api/user/register/` - Register new user
+- `POST /api/user/login/` - Login user and receive JWT tokens
+- `GET /api/user/profile/` - Get user profile (requires authentication)
+- `POST /api/user/changepassword/` - Change password (requires authentication)
+
+### Password Reset Flow
+- `POST /api/user/send-reset-password-email/` - Request password reset email
+- `POST /api/user/reset-password/<uid>/<token>/` - Reset password with token
+
+## Project Setup
+
+1. Create and activate virtual environment:
